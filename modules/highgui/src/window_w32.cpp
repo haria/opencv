@@ -995,7 +995,7 @@ static void icvScreenToClient( HWND hwnd, RECT* rect )
 /* Calculatess the window coordinates relative to the upper left corner of the mainhWnd window */
 static RECT icvCalcWindowRect( CvWindow* window )
 {
-    const int gutter = 1;
+    // const int gutter = 1;
     RECT crect, trect, rect;
 
     assert(window);
@@ -1010,10 +1010,10 @@ static RECT icvCalcWindowRect( CvWindow* window )
     else
         rect = crect;
 
-    rect.top += gutter;
-    rect.left += gutter;
-    rect.bottom -= gutter;
-    rect.right -= gutter;
+    // rect.top += gutter;
+    // rect.left += gutter;
+    // rect.bottom -= gutter;
+    // rect.right -= gutter;
 
     return rect;
 }
